@@ -43,7 +43,7 @@ export const authOptions: NextAuthOptions = {
                   }
                 }
 
-                const userOrgs = await (
+                /*const userOrgs = await (
                   await fetch('https://api.github.com/user/orgs', {
                     headers: { Authorization: `token ${tokens.access_token}` },
                   })
@@ -56,7 +56,7 @@ export const authOptions: NextAuthOptions = {
                   )
                 ) {
                   profile.notAllowed = true
-                }
+                }*/
 
                 return profile
               },
