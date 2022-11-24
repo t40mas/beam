@@ -240,7 +240,7 @@ const PostPage: NextPageWithAuthAndLayout = () => {
               />
             </div>
             <HtmlView html={postQuery.data.contentHtml} className="mt-8" />
-            <div className="flex gap-4 mt-6">
+            <div className="flex gap-4 mt-6 clear-both">
               <LikeButton
                 likedBy={postQuery.data.likedBy}
                 onLike={() => {
@@ -255,7 +255,7 @@ const PostPage: NextPageWithAuthAndLayout = () => {
                 variant="secondary"
               >
                 <MessageIcon className="w-4 h-4 text-secondary" />
-                <span className="ml-1.5">{postQuery.data._count.comments}</span>
+                <span className="ml-1.5">{postQuery.data.comments.length}</span>
               </ButtonLink>
             </div>
           </div>

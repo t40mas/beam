@@ -125,12 +125,6 @@ export const postRouter = createProtectedRouter()
               },
             },
           },
-          _count: {
-            select: {
-              comments: true,
-              likedBy: true,
-            },
-          },
         },
       })
 
@@ -186,7 +180,7 @@ export const postRouter = createProtectedRouter()
         },
       })
 
-      postToSlackIfEnabled({ post, authorName: ctx.session.user.name })
+      await postToSlackIfEnabled({ post, authorName: ctx.session.user.name })
 
       return post
     },
