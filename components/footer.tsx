@@ -11,7 +11,7 @@ export function Footer() {
         <span>
           by{' '}
           <a
-            href="https://planetscale.com"
+            href="https://www.bva.bund.de/"
             target="_blank"
             rel="noreferrer"
             className="transition-colors text-secondary hover:text-primary"
